@@ -30,6 +30,21 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        blink: {
+          '0%': { opacity: '1' },
+          '50%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        type: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        }
+      },
+      animation: {
+        blink: 'blink 1.5s ease-in-out infinite',
+        type: 'type 2s ease-out forwards',
+      },
     },
   },
   plugins: [],
